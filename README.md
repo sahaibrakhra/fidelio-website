@@ -1,11 +1,11 @@
 # Fidelio
 
-This repository contains the front-end and back-end architecture for **Fidelio**—a mathematical sandbox project dedicated to conveying the ideas of pure mathematics across all its different modes of understanding: formal, intuitive, and visual.
+This repository contains the front-end and back-end architecture for **Fidelio**—a mathematical sandbox project dedicated to conveying the ideas of pure mathematics across all its different modes of understanding from formal logical axioms and definitions to intuitive conceptualizations of the motivations and meanings of the objects and relationships.
 
 ---
 
 ## 🏛️ Concept & Philosophy
-Mathematics is rarely experienced in a single dimension. Fidelio is designed as a digital archive and sandbox to bridge the gap between rigorous abstract formalism, geometrical intuition, and interactive visual realization. 
+Mathematics is rarely experienced in a singular way. Fidelio is designed as a digital archive and sandbox to bridge the gap between rigorous abstract formalism and interactive visual realization. 
 
 ---
 
