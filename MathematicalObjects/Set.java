@@ -1,4 +1,5 @@
 public class Set<T>{
+/* Java class implementation for the Mathematical Object of set encoding a well-defined collection of elements */
 
     private T[] set;
 
