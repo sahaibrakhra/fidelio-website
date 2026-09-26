@@ -1,20 +1,20 @@
 public class Set<T>{
 /* Java class implementation for the Mathematical Object of set encoding a well-defined collection of elements */
 
-    private T[] set;
+    private T[] setElements;
 
     public Set(){ /*default constructor*/ }
 
     public Set(T[] set){
-        this.set = set;
+        this.setElements = set;
     }
 
     public int getCardinality(){
-        return set.length;
+        return setElements.length;
     } 
 
     public T[] getSet(){
-        return set;
+        return setElements;
     }
     /*
     public static <T> Set<T> cartesianProduct(Set<T> set1, Set<T> set2){
