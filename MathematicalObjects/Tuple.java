@@ -5,6 +5,8 @@ public class Tuple <T> {
 
     public Tuple(){ /*default constructor*/ }
 
-
+    public Tuple(T[] tuple){
+        this.tupleElements = tuple;
+    }
 
 }
