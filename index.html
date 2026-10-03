@@ -5,3 +5,207 @@ and interactive way. The goal is to make pure mathematics more accessible and en
 mathematical structures, such as graphs, functions, and geometric shapes. Fidelio encourages collaboration and sharing of mathematical 
 ideas, fostering a community of learners and enthusiasts who can contribute to the development of the platform.
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Math Sandbox | Fidelio</title>
+    <style>
+        /* Base Dark Mode Theme: White text on varying shades of deep grey */
+        :root {
+            --bg-base: #121212;      /* Deepest grey/black for the main background */
+            --bg-panel: #1e1e1e;     /* Slightly lighter grey for sidebars */
+            --bg-hover: #2c2c2c;     /* Lighter grey for interactive elements */
+            --text-primary: #ffffff; /* Pure white for primary headings */
+            --text-muted: #b3b3b3;   /* Soft grey for paragraph text and lines */
+            --border-color: #333333; /* Subtle dividing lines */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header matching the top of the whiteboard */
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        /* 3-Column Grid Layout */
+        .container {
+            display: grid;
+            grid-template-columns: 250px 1fr 250px;
+            flex-grow: 1;
+            gap: 2rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* Left Column: Navigation */
+        .left-menu {
+            background-color: var(--bg-panel);
+            padding: 2rem;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .left-menu h3, .right-menu h3 {
+            margin-top: 0;
+            font-size: 1.3rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .nav-link {
+            color: var(--text-primary);
+            text-decoration: none;
+            font-size: 1.1rem;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .nav-link:hover {
+            background-color: var(--bg-hover);
+        }
+
+        .topics-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding-left: 1rem;
+        }
+
+        .placeholder-line {
+            height: 8px;
+            background-color: var(--text-muted);
+            border-radius: 4px;
+            opacity: 0.3;
+            margin: 4px 0;
+        }
+
+        /* Center Column: Welcome & Motivation */
+        .center-content {
+            padding: 1rem 2rem;
+        }
+
+        .center-content h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+
+        .text-block {
+            margin-bottom: 3rem;
+        }
+
+        .text-block p {
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Right Column: About Me & Contact */
+        .right-menu {
+            background-color: var(--bg-panel);
+            padding: 2rem;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pure Math Sandbox</h1>
+        <h2>Main Menu</h2>
+    </header>
+
+    <div class="container">
+        <!-- Left Column -->
+        <nav class="left-menu">
+            <a href="#" class="nav-link">Account</a>
+            
+            <div>
+                <a href="#" class="nav-link" style="display: block; margin-bottom: 1rem;">Topics</a>
+                <div class="topics-list">
+                    <!-- Placeholder squiggles from sketch -->
+                    <div class="placeholder-line" style="width: 80%;"></div>
+                    <div class="placeholder-line" style="width: 90%;"></div>
+                    <div class="placeholder-line" style="width: 75%;"></div>
+                    <div class="placeholder-line" style="width: 85%;"></div>
+                    <div class="placeholder-line" style="width: 70%;"></div>
+                    <div class="placeholder-line" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <a href="#" class="nav-link" style="margin-top: auto;">About</a>
+        </nav>
+
+        <!-- Center Column -->
+        <main class="center-content">
+            <div class="text-block">
+                <h2>Welcome!</h2>
+                <!-- Placeholder text representing the lines in the sketch -->
+                <p>Welcome to Fidelio, an interactive sandbox designed to visually and rigorously explore the foundations of pure mathematics. Select a topic on the left to begin initializing your abstract structures.</p>
+                <div class="placeholder-line" style="width: 100%; margin-top: 1rem;"></div>
+                <div class="placeholder-line" style="width: 95%;"></div>
+                <div class="placeholder-line" style="width: 98%;"></div>
+            </div>
+
+            <div class="text-block" style="text-align: right;">
+                <h3>Exec. Summ.</h3>
+                <h3>Motivation</h3>
+            </div>
+        </main>
+
+        <!-- Right Column -->
+        <aside class="right-menu">
+            <div>
+                <h3>About Me</h3>
+                <div class="placeholder-line" style="width: 100%;"></div>
+                <div class="placeholder-line" style="width: 90%;"></div>
+                <div class="placeholder-line" style="width: 95%;"></div>
+                <div class="placeholder-line" style="width: 80%;"></div>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <div class="placeholder-line" style="width: 100%;"></div>
+                <div class="placeholder-line" style="width: 85%;"></div>
+                <div class="placeholder-line" style="width: 90%;"></div>
+            </div>
+        </aside>
+    </div>
+
+</body>
+</html>
